@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org%22">
+<head th:replace="/fragments/_header :: head(pageTitle='3RD EASY STEP')">
+</head>
+
+<body>
+    <div th:insert="/fragments/_header :: header"></div>
+
+    <h2>Step 3</h2>
+    <table>
+        <tr>
+            <td>
+                <p>Something is terribly wrong.
+                <br>Something is terribly wrong.
+                <br>Something is terribly wrong.
+                <br>Something is terribly wrong.
+                <br>Something is terribly wrong.
+                <br>Something is terribly wrong.
+                <br>Something is terribly wrong.
+                <br>Something is terribly wrong.
+                <br>Something is terribly wrong.
+                <br>Something is terribly wrong.
+                <br>Something is terribly wrong.
+                <br>Something is terribly wrong.
+                </p>
+            </td>
+            <td>
+                <img th:src="@{/img/wakeup.png}">
+                <p class="subtext">Image source: 'Trollge' by Tatarski</p>
+            </td>
+        </tr>
+    </table>
+
+    <div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<body>
+
+<head th:fragment="head(pageTitle)">
+  <meta charset="UTF-8">
+  <title th:text="${pageTitle}"></title>
+  <link rel="stylesheet" th:href="@{/style.css}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+</script>
+</head>
+
+<header th:fragment="header">
+  <nav>
+    <ul>
+      <li><a th:href="@{/}">Home</a></li>
+      <li><a th:href="@{step1}">Step 1</a></li>
+      <li><a th:href="@{/step2}">Step 2</a></li>
+      <li><a th:href="@{/step3}">Step 3</a></li>
+    </ul>
+  </nav>
+</header>
+
+</body>
+</html>

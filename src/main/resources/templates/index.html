@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org%22">
+<head th:replace="/fragments/_header :: head(pageTitle='3 easy steps to c̷҉̵̀҉̸̧͢o̕͏̡̢̛̛͘͜r̵̛̕͟͟͏̸̢ŗ̢̛̛͜͢͝͞u̴̡̕͘͢͜͜͡ṕ̴̡͘͘͢͏͏t̸̴̸̨̛͢͢͡')">
+</head>
+
+<body>
+    <div th:insert="/fragments/_header :: header"></div>
+
+    <h1>Problem?</h1>
+    <table>
+        <tr>
+            <td>
+                <p>The King's pact binds them.</p>
+                <p>They cannot reveal themselves nor speak to us.</p>
+            </td>
+            <td>
+                <img th:src="@{/img/solomon.png}"/>
+                <p class="subtext"}><a th:href="@{redirect:https://pixabay.com/vectors/seal-signs-symbols-solomon-40410/}">
+                Image source: https://pixabay.com/vectors/seal-signs-symbols-solomon-40410/
+                </a></p>
+            </td>
+        </tr>
+    </table>
+
+    <div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>

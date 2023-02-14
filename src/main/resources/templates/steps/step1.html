@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org%22">
+<head th:replace="/fragments/_header :: head(pageTitle='1st easy step')">
+</head>
+
+<body>
+    <div th:insert="/fragments/_header :: header"></div>
+
+    <h2>Step 1</h2>
+    <table>
+        <tr>
+            <td>
+                <p>Create ways to see without seeing.</p>
+            </td>
+            <td>
+                <img th:src="@{/img/computer.png}"/>
+                <p class="subtext"}><a th:href="@{redirect:https://www.compufinupt.co.za/products-services/personal-computer-hardware-servers-software/}">
+                    Image source: https://www.compufinupt.co.za/products-services/personal-computer-hardware-servers-software/
+                </a></p>
+            </td>
+        </tr>
+    </table>
+
+
+    <div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>
